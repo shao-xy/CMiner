@@ -4,13 +4,14 @@
 
 #include "CMinerBase.h"
 
-CMinerBase::CMinerBase() {
+CMinerBase::CMinerBase(std::string inputSequence, int windowSize, int maxGap, int minSupport, float minConfidence)
+    : inputSequence(inputSequence), windowSize(windowSize), maxGap(maxGap), minSupport(minSupport), minConfidence(minConfidence) {
     // 设置默认参数
-    this->windowSize = 5;
-    this->maxGap = this->windowSize - 2;
-    this->minSupport = 4;
-    this->minConfidence = 1.0f;
-    this->maxSeqLength = 0;
+//    this->windowSize = 5;
+//    this->maxGap = this->windowSize - 2;
+//    this->minSupport = 4;
+//    this->minConfidence = 1.0f;
+//    this->maxSeqLength = 0;
 
 }
 
